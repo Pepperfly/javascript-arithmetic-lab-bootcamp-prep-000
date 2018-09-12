@@ -30,9 +30,9 @@ function makeInt(n) {
 }
 
 function preserveDecimal(n) {
-  if (isNaN(parseInt(n))) {
+  if (isNaN(parseFloat(n))) {
     return `NaN`;
   }
   var integr = Math.floor(n);
-  return (parseInt(n) - integr);
+  return (parseFloat(n) - integr);
 }
