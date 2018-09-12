@@ -34,5 +34,5 @@ function preserveDecimal(n) {
     return `NaN`;
   }
   var integr = parseFloat(n);
-  return (parseInt(n) - integr);
+  return (parseInt(n) - integr).toFixed(3);
 }
