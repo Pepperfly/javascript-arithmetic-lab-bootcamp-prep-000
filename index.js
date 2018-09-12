@@ -33,5 +33,6 @@ function preserveDecimal(n) {
   if (isNaN(parseInt(n))) {
     return `NaN`;
   }
-    
+  integr = Math.floor(n);
+  return (n - integr);
 }
