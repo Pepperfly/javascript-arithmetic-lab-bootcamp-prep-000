@@ -23,16 +23,16 @@ function dec(n) {
 }
 
 function makeInt(n) {
-  if (isNaN(parseFloat(n))) {
+  if (isNaN(parseInt(n))) {
     return `NaN`;
   }
-  return parseFloat(n, 10);
+  return parseInt(n, 10);
 }
 
 function preserveDecimal(n) {
-  if (isNaN(parseFloat(n))) {
+  if (isNaN(parseInt(n))) {
     return `NaN`;
   }
-  var integr = Math.floor(n);
-  return (parseFloat(n) - integr).toFixed(3);
+  var integr = parseFloat(n);
+  return (parseInt(n) - integr);
 }
