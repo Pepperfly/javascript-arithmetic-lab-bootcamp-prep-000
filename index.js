@@ -28,6 +28,5 @@ function makeInt(n) {
   } else {
     return `NaN`;
   }
-  
 }
 
