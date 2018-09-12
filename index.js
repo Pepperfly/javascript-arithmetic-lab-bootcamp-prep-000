@@ -23,10 +23,10 @@ function dec(n) {
 }
 
 function makeInt(n) {
-  if (isNaN(parseInt(n))) {
+  if (isNaN(parseFloat(n))) {
     return `NaN`;
   }
-  return parseInt(n, 10);
+  return parseFloat(n, 10);
 }
 
 function preserveDecimal(n) {
